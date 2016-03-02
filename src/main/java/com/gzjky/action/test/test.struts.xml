@@ -8,7 +8,7 @@
 	
 	<package name="test" extends="struts-api-base" namespace="/test">
 
-		<action name="imageUrl_list" class="com.gzjky.action.test.TestAction" method="getImageUrl">
+		<action name="imageUrl_list" class="com.gzjky.action.test.TestAction" method="exec">
 			<result type="json"></result> 
 		</action>
 	</package>

@@ -1,44 +1,58 @@
 package com.gzjky.action.test;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.opensymphony.xwork2.ActionSupport;
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.beanutils.BeanUtils;
+import org.apache.struts2.ServletActionContext;
+
+import com.gzjky.action.ApiBaseAction;
 
 import net.sf.json.JSONObject;
 
 
-public class TestAction extends ActionSupport{
+public class TestAction extends ApiBaseAction{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1952672370753974717L;
 	
-	private JSONObject jsonObject;
+	// 前台对应的参数bean
+	private TestInputBean param = new TestInputBean();
 	
-	public String getImageUrl() throws IOException{
-		TestOutBean result = new TestOutBean();
+	private JSONObject result;
+	
+	public String doExec() throws Exception{
+		// 处理跨域请求问题
+		super.sethttp(ServletActionContext.getResponse());
+		
+		// 将前台传来的参数copy到javabean中，方便处理
+		HttpServletRequest request = ServletActionContext.getRequest();
+		BeanUtils.populate(param, request.getParameterMap());
+		
+		// 向前台返回值
+		TestOutBean testOutBean = new TestOutBean();
 		List<String> imageUrl = new ArrayList<String>();
 		imageUrl.add("http://image.baidu.com/150309101F7.jpg");
 		imageUrl.add("http://image.baidu.com/0.jpg");
-		result.setName("余廷");
-		result.setPassword("yuting0787");
-		result.setImageUrl(imageUrl);
+		testOutBean.setName("余廷");
+		testOutBean.setPassword("yuting0787");
+		testOutBean.setImageUrl(imageUrl);
 
-		// 将java对象转成json对象
-		jsonObject = JSONObject.fromObject(result);// 将list转换为json数组
+		// 将出力Bean转成json对象
+		result = JSONObject.fromObject(testOutBean);// 将list转换为json数组
 		
 		return SUCCESS;
 	}
 
-	public JSONObject getJsonObject() {
-		return jsonObject;
+	public JSONObject getResult() {
+		return result;
 	}
 
-	public void setJsonObject(JSONObject jsonObject) {
-		this.jsonObject = jsonObject;
+	public void setResult(JSONObject result) {
+		this.result = result;
 	}
-
 }
