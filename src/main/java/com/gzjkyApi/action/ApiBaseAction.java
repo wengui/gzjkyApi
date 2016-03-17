@@ -1,4 +1,4 @@
-package com.gzjky.action;
+package com.gzjkyApi.action;
 
 import javax.servlet.http.HttpServletResponse;
 

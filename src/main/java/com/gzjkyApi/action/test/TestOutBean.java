@@ -1,10 +1,12 @@
-package com.gzjky.action.test;
+package com.gzjkyApi.action.test;
 
+import java.util.List;
 
-public class TestInputBean {
+public class TestOutBean {
 
 	private String name;
 	private String password;
+	private List<String> imageUrl;
 	public String getName() {
 		return name;
 	}
@@ -17,6 +19,11 @@ public class TestInputBean {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
+	public List<String> getImageUrl() {
+		return imageUrl;
+	}
+	public void setImageUrl(List<String> imageUrl) {
+		this.imageUrl = imageUrl;
+	}
 	
 }

@@ -1,4 +1,4 @@
-package com.gzjky.action.test;
+package com.gzjkyApi.action.test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.struts2.ServletActionContext;
 
-import com.gzjky.action.ApiBaseAction;
+import com.gzjkyApi.action.ApiBaseAction;
 
 import net.sf.json.JSONObject;
 

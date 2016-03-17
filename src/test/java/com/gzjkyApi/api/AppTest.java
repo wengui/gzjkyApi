@@ -1,4 +1,4 @@
-package com.gzjky.api;
+package com.gzjkyApi.api;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

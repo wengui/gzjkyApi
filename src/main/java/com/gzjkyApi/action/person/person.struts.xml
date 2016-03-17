@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+
+	<package name="person" extends="struts-api-base" namespace="/person">
+
+		<action name="getHospitalAndDoctor" class="com.gzjkyApi.action.person.getHospitalAndDoctor"
+			method="doExec">
+			<result type="json"></result>
+		</action>
+
+		<action name="getEquipment" class="com.gzjkyApi.action.person.getEquipment"
+			method="doExec">
+			<result type="json"></result>
+		</action>
+
+		<action name="login" class="com.gzjkyApi.action.person.login"
+			method="doExec">
+			<result type="json"></result>
+		</action>
+		
+		<action name="autologin" class="com.gzjkyApi.action.person.login"
+			method="doExecAuto">
+			<result type="json"></result>
+		</action>
+		
+		
+		
+	</package>
+</struts>
