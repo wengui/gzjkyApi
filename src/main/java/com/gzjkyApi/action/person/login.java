@@ -130,7 +130,7 @@ public class login extends ApiBaseAction {
 				
 				
 				UserAndPhone userAndPhone = userAndPhoneReadMapper.selectByPrimaryKey(loginId);
-				if(userAndPhone!=null){
+				if(userAndPhone==null){
 					UserAndPhone userandphone= new UserAndPhone();
 					userandphone.setUserdevice(deviceid);
 					userandphone.setUsername(loginId);

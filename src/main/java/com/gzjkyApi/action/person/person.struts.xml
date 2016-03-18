@@ -28,7 +28,14 @@
 			<result type="json"></result>
 		</action>
 		
-		
+		<action name="getHeadImage" class="com.gzjkyApi.action.person.getHeadImage"
+			method="doExecByPid">
+			<result  type="stream">  
+                <param name="contentType">image/jpeg</param>  
+               <param name="inputName">headImage</param>  
+               <param name="bufferSize">1024</param>  
+            </result> 
+		</action>
 		
 	</package>
 </struts>
