@@ -8,11 +8,11 @@
 	
 	<package name="equipment" extends="struts-api-base" namespace="/equipment">
 
-		<action name="queryEquipment" class="com.gzjkyApi.action.equipmentAction.QueryEquipmentAction" method="exec">
+		<action name="queryEquipment" class="com.gzjkyApi.action.equipmentAction.QueryEquipmentAction" method="doExec">
 			<result type="json"></result> 
 		</action>
 		
-		<action name="equipmentBind" class="com.gzjkyApi.action.equipmentAction.EquipmentBindAction" method="exec">
+		<action name="equipmentBind" class="com.gzjkyApi.action.equipmentAction.EquipmentBindAction" method="doExec">
 			<result type="json"></result> 
 		</action>
 	</package>
