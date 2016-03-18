@@ -1,22 +1,17 @@
 package com.gzjkyApi.action.person;
 
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.util.Date;
 import java.util.List;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.beanutils.BeanUtils;
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.struts2.ServletActionContext;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.gzjky.base.util.date.DateUtil;
 import com.gzjky.base.util.password.PwdUtil;
-import com.gzjky.bean.extend.PatientAndDoctorHospitalBean;
-import com.gzjky.bean.extend.PatientAndEquipmentBean;
 import com.gzjky.bean.extend.UserinfoAndPatientinfoBean;
 import com.gzjky.bean.gen.Onlines;
 import com.gzjky.bean.gen.UserAndPhone;
@@ -28,7 +23,8 @@ import com.gzjky.dao.readdao.UserInfoReadMapper;
 import com.gzjky.dao.writedao.OnlinesWriteMapper;
 import com.gzjky.dao.writedao.UserAndPhoneWriteMapper;
 import com.gzjkyApi.action.ApiBaseAction;
-import com.opensymphony.xwork2.ActionContext;
+import com.gzjkyApi.bean.person.LoginMessageOutputBean;
+import com.gzjkyApi.bean.person.LoginOutputBean;
 
 import net.sf.json.JSONObject;
 

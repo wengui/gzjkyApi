@@ -18,6 +18,7 @@ import com.gzjky.dao.readdao.EquipmentAndPatientReadMapper;
 import com.gzjky.dao.readdao.EquipmentReadMapper;
 import com.gzjky.dao.writedao.EquipmentAndPatientWriteMapper;
 import com.gzjkyApi.action.ApiBaseAction;
+import com.gzjkyApi.bean.equipment.EquipmentBindOutputBean;
 import com.opensymphony.xwork2.ActionContext;
 
 import net.sf.json.JSONObject;

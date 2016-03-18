@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.gzjky.bean.extend.PatientDeviceInfoBean;
 import com.gzjky.dao.readdao.EquipmentAndPatientReadMapper;
 import com.gzjkyApi.action.ApiBaseAction;
+import com.gzjkyApi.bean.equipment.EquipmentOutputBean;
 
 import net.sf.json.JSONObject;
 

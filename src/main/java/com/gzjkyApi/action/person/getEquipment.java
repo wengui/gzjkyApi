@@ -1,18 +1,18 @@
 package com.gzjkyApi.action.person;
 import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
+
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.gzjky.bean.extend.PatientAndDoctorHospitalBean;
 import com.gzjky.bean.extend.PatientAndEquipmentBean;
 import com.gzjky.dao.readdao.EquipmentAndPatientReadMapper;
-import com.gzjky.dao.readdao.PatientAndHospitalDoctorReadMapper;
 import com.gzjkyApi.action.ApiBaseAction;
+import com.gzjkyApi.bean.person.LoginOutputBean;
 
 import net.sf.json.JSONArray;
-
 import net.sf.json.JsonConfig;
 import net.sf.json.util.CycleDetectionStrategy;
 

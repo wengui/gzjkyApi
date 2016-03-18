@@ -1,16 +1,7 @@
-package com.gzjkyApi.action.person;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import com.gzjky.bean.extend.UserinfoAndPatientinfoBean;
-import com.gzjky.bean.gen.UserInfo;
+package com.gzjkyApi.bean.person;
 
 public class LoginMessageOutputBean {
 
-
-
-	
 	//错误信息
 	private String message;
 

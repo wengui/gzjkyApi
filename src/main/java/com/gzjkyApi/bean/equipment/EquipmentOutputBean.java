@@ -1,4 +1,4 @@
-package com.gzjkyApi.action.equipmentAction;
+package com.gzjkyApi.bean.equipment;
 
 import java.util.List;
 
