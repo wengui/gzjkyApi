@@ -1,13 +1,10 @@
-package com.gzjkyApi.action.person;
+package com.gzjkyApi.bean.person;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.gzjky.bean.extend.UserinfoAndPatientinfoBean;
-import com.gzjky.bean.gen.UserInfo;
 
 public class LoginOutputBean {
-
 
 	//用户信息
 	private String user;

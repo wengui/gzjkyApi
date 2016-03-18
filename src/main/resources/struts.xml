@@ -21,7 +21,7 @@
 	
 	<!-- 使用模块化管理，把每一个模块的struts。xml都包含进了 -->
 	<include file="config/struts/data/struts-api-base.xml" />
-	<include file="com/gzjky/action/**/*.struts.xml" />
+	<include file="com/gzjkyApi/action/**/*.struts.xml" />
 
 
 </struts>

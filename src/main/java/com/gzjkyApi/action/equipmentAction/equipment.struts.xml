@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+	
+	<package name="equipment" extends="struts-api-base" namespace="/equipment">
+
+		<action name="queryEquipment" class="com.gzjkyApi.action.equipmentAction.QueryEquipmentAction" method="doExec">
+			<result type="json"></result> 
+		</action>
+		
+		<action name="equipmentBind" class="com.gzjkyApi.action.equipmentAction.EquipmentBindAction" method="doExec">
+			<result type="json"></result> 
+		</action>
+	</package>
+</struts>
