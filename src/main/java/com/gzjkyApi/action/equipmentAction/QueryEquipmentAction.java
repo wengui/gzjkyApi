@@ -39,7 +39,7 @@ public class QueryEquipmentAction extends ApiBaseAction {
 		//BeanUtils.populate(param, request.getParameterMap());
 		
 		List<PatientDeviceInfoBean> patientDeviceInfoList=null;
-		
+		// TODO
 		patientDeviceInfoList= equipmentAndPatientReadMapper.queryMemberBindDevice(1);
 
 		EquipmentOutputBean outBean = new EquipmentOutputBean();
