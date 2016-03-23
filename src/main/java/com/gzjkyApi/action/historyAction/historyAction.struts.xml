@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="historyAction" extends="struts-api-base" namespace="/historyAction">
+	
+	<!-- 血压查询 -->
+	<action name="queryBloodPressureList" class="com.gzjkyApi.action.historyAction.QueryBloodPressureListAction" method="doExec">
+		<result type="json"></result> 
+	</action>
+	<!-- 心电历史查询 -->
+	<action name="queryEcgList" class="com.gzjkyApi.action.historyAction.QueryEtcHistoryListAction" method="doExec">
+		<result type="json"></result> 
+	</action>
+	</package>
+</struts>
